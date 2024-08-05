@@ -1,0 +1,759 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.woff2") format("woff2"),
+    url("./fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #777;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+}
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  font-weight: 800;
+  font-size: 36px;
+  color: #333;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+h4 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+p {
+  font-size: 15px;
+}
+p.intro {
+  margin: 12px 0 0;
+  line-height: 24px;
+}
+a {
+  color: #608dfd;
+  font-weight: 400;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #608dfd;
+}
+ul,
+ol {
+  list-style: none;
+}
+ul,
+ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+hr {
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #1e7a46;
+  margin-bottom: 20px;
+  border: 0;
+}
+/* Navigation */
+#menu {
+  padding: 10px; /* Adds 10px padding to the top and bottom of the navigation bar */
+  transition: all 0.8s; /* Applies a smooth transition (0.8 seconds) for all properties when they change */
+  border-radius: 5px; /* Rounds the corners of the navigation bar with a 5px radius */
+}
+#menu.navbar-default {
+  /* Styles for the default navbar appearance */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.259
+  ); /* Sets a semi-transparent white background */
+  border-color: rgba(231, 10, 10, 0); /* Removes the border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.323); /* Adds a subtle box shadow for depth */
+}
+#menu a.navbar-brand {
+  /* Styles for the brand/logo element */
+  font-family: "Inter", sans-serif; /* Specifies the font family */
+  font-size: 24px; /* Sets the font size to 24 pixels */
+  font-weight: 650; /* Makes the font semi-bold */
+  color: #555; /* Dark gray text color */
+  text-transform: uppercase; /* Converts text to uppercase */
+}
+#menu.navbar-default .navbar-nav > li > a {
+  /* Styles for navigation links */
+  font-family: "Inter", sans-serif; /* Specifies the font family */
+  text-transform: uppercase;
+  color: #555;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 2px; /* Padding around the link text */
+  border-radius: 0; /* Removes rounded corners from links */
+  margin: 9px 20px 0; /* Adds margin to separate links */
+}
+
+/* Creates an underline effect on hover */
+#menu.navbar-default .navbar-nav > li > a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px; /* Positions the underline slightly below the text */
+  width: 0; /* Initial width is 0, making it invisible */
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #6372ff 0%,
+    #5ca9fb 100%
+  ); /* Gradient for the underline */
+  content: ""; /* Required for pseudo-elements */
+  transition: width 0.2s; /* Smooth transition of the underline's width */
+}
+#menu.navbar-default .navbar-nav > li > a:hover:after {
+  width: 100%; /* On hover, the underline extends to the full width of the link */
+}
+/* Styles for the active link */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  /* Ensures the active link doesn't have a background color */
+}
+/* Ensures the active link's underline is always visible */
+.navbar-default .navbar-nav > .active > a:after,
+.navbar-default .navbar-nav > .active > a:hover:after,
+.navbar-default .navbar-nav > .active > a:focus:after {
+  display: block !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -1px !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  content: "" !important;
+  transition: width 0.2s !important;
+}
+.navbar-toggle {
+  border-radius: 0;
+}
+
+/* Styling for the toggle button (hamburger menu) on hover/focus */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+  border-color: #608dfd;
+}
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: #608dfd;
+}
+.section-title {
+  margin-bottom: 70px; /* Adds 70px of bottom margin to the section title container */
+}
+.section-title h2 {
+  position: relative; /* Necessary for positioning the decorative line (::after) */
+  margin-top: 10px; /* Adds 10px of top margin to the h2 heading */
+  margin-bottom: 15px; /* Adds 15px of bottom margin to the h2 heading */
+  padding-bottom: 15px; /* Adds 15px of bottom padding to the h2 heading to make space for the line */
+}
+.section-title h2::after {
+  /* Styles the decorative line under the h2 heading */
+  position: absolute;
+  content: "";
+  background: linear-gradient(
+    to right,
+    #5ca9fb 0%,
+    #6372ff 100%
+  ); /* Gradient background */
+  height: 4px; /* Line height */
+  width: 60px; /* Line width */
+  bottom: 0; /* Positions the line at the bottom of the h2 element */
+  margin-left: -30px; /* Centers the line horizontally under the h2 text */
+  left: 50%;
+}
+.section-title p {
+  font-size: 18px; /* Sets the font size of the paragraph text below the h2 heading */
+}
+.btn-custom {
+  font-family: "Raleway", sans-serif; /* Specifies the font family */
+  text-transform: uppercase; /* Makes the text uppercase */
+  color: #fff; /* Sets text color to white */
+  background-color: #5ca9fb; /* Sets background color (fallback if gradient not supported) */
+  background-image: linear-gradient(
+    to right,
+    #5ca9fb 0%,
+    #6372ff 100%
+  ); /* Gradient background */
+  padding: 14px 34px; /* Padding around the button text */
+  letter-spacing: 1px; /* Adjusts spacing between letters */
+
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500; /* Semi-bold font weight */
+  border-radius: 25px; /* Creates rounded corners */
+  transition: all 0.5s linear; /* Smooth transition for background color on hover/focus/etc. */
+  border: 0; /* Removes the default border */
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active {
+  /* Button styles on hover/focus/active states */
+  color: #fff;
+  background-image: none; /* Removes the gradient on hover/focus/etc. */
+  background-color: #6372ff; /* Sets a solid background color */
+}
+/* More General Button Styles (Potentially Overriding Bootstrap Defaults) */
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* Remove focus outline for links and buttons */
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: none;
+}
+/* Header Section */
+.intro {
+  display: table; /* Makes the intro section behave like a table for vertical centering */
+  width: 100%;
+  padding: 0;
+  background: url(../img/intro-bg.jpg) center center no-repeat; /* Sets the background image */
+  background-color: #e5e5e5; /* Fallback background color if the image fails to load */
+  -webkit-background-size: cover; /* Ensures the background image covers the entire area */
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro .overlay {
+  /* Styles the overlay on top of the background image */
+  background: rgba(0, 0, 0, 0.2); /* Black overlay with 20% opacity */
+}
+.intro h1 {
+  /* Styles for the main heading */
+  font-family: "Raleway", sans-serif;
+  color: #fff; /* White text color */
+  font-size: 82px;
+  font-weight: 700; /* Bold font weight */
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.intro h1 span {
+  /* Styles for a specific part of the heading (likely for emphasis) */
+  font-weight: 800; /* Even bolder font weight */
+  color: #5ca9fb; /* Blue color */
+}
+.intro p {
+  /* Styles for the paragraph text */
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300; /* Light font weight */
+  line-height: 30px; /* Line spacing for readability */
+  margin: 0 auto; /* Centers the paragraph horizontally */
+  margin-bottom: 60px;
+}
+header .intro-text {
+  /* Styles the container for the heading, paragraph, and button */
+  padding-top: 350px; /* Large top padding to push content down */
+  padding-bottom: 200px; /* Bottom padding */
+  text-align: center; /* Centers the content horizontally */
+}
+/* Features Section */
+#features {
+  background: #f6f6f6; /* Light gray background color for the section */
+}
+#features i.fa {
+  /* Styles for Font Awesome icons within the Features section */
+  font-size: 38px; /* Icon size */
+  margin-bottom: 20px; /* Bottom margin for spacing */
+  transition: all 0.5s; /* Smooth transitions for hover effects (if any) */
+  color: #fff; /* White icon color */
+  width: 100px;
+  height: 100px;
+  padding: 30px 0; /* Padding within the icon container */
+  border-radius: 50%; /* Creates a circular icon */
+  background: linear-gradient(
+    to right,
+    #6372ff 0%,
+    #5ca9fb 100%
+  ); /* Gradient background */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+/* About Section */
+#about {
+  padding: 100px 0; /* Adds top/bottom padding of 100px to the entire About section */
+}
+#about h3 {
+  /* Styles for the "Why Choose Us?" subheading */
+  font-size: 22px;
+  margin: 0 0 20px; /* 20px bottom margin for spacing */
+}
+#about h2 {
+  /* Styles for the main "About Us" heading */
+  position: relative; /* Needed for positioning the decorative line (::after) */
+  margin-bottom: 15px; /* Bottom margin for spacing */
+  padding-bottom: 15px; /* Extra bottom padding to accommodate the line */
+}
+#about h2::after {
+  /* Styles the decorative line under the h2 heading */
+  position: absolute;
+  content: "";
+  background: linear-gradient(
+    to right,
+    #5ca9fb 0%,
+    #6372ff 100%
+  ); /* Gradient background */
+  height: 4px; /* Line height */
+  width: 60px; /* Line width */
+  bottom: 0; /* Positions the line at the bottom of the h2 element */
+  left: 0; /* Positions the line to the left */
+}
+#about .about-text li {
+  /* Styles for list items within the "about-text" container */
+  margin-bottom: 6px; /* Bottom margin for spacing between list items */
+  margin-left: 6px; /* Left margin for indentation */
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+}
+#about .about-text li:before {
+  /* Adds a FontAwesome icon before each list item */
+  content: "\f00c"; /* Unicode for the FontAwesome checkmark icon */
+  font-family: "FontAwesome";
+  color: #5ca9fb; /* Blue color for the icon */
+  font-size: 11px;
+  font-weight: 300; /* Lighter font weight */
+  padding-right: 8px; /* Right padding to create space between icon and text */
+}
+#about img {
+  /* Styles for the image in the About section */
+  width: 520px; /* Fixed width (consider using max-width for responsiveness) */
+  margin-top: 10px;
+  background: #fff; /* White background behind the image */
+  border-right: 0; /* Removes the right border */
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06); /* Subtle shadow for depth */
+}
+#about p {
+  /* Styles for the paragraph text in the About section */
+  line-height: 24px; /* Line height for readability */
+  margin: 30px 0; /* Top and bottom margins for spacing */
+}
+/* Services Section */
+#services {
+  padding: 100px 0; /* Adds 100px padding to the top and bottom of the section */
+  background: linear-gradient(
+    to right,
+    #6372ff 0%,
+    #5ca9fb 100%
+  ); /* Sets a blue gradient background */
+  color: #fff; /* Sets the default text color to white */
+}
+#services .service-desc {
+  margin: 10px 10px 20px; /* Adds margins around the service description container: 
+  * 10px top and bottom
+  * 10px left and right
+  * Overrides the 40px bottom margin added later 
+  */
+}
+#services h2 {
+  color: #fff; /* Makes the main heading text white */
+}
+#services .section-title h2::after {
+  /* Targets the ::after pseudo-element of h2 within .section-title */
+  position: absolute; /* Allows precise positioning within its parent */
+  content: ""; /* Required for pseudo-elements */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Semi-transparent white background for the line */
+  height: 4px; /* Sets the height of the line */
+  width: 60px; /* Sets the width of the line */
+  bottom: 0; /* Positions the line at the bottom of the h2 element */
+  margin-left: -30px; /* Centers the line horizontally (half its width) */
+  left: 50%; /* Positions the line's left edge at 50% of its parent's width */
+}
+
+/* Icon Styling */
+#services i.fa {
+  /* Targets Font Awesome icons within the #services section */
+  font-size: 42px; /* Sets a large font size for the icons */
+  width: 120px; /* Sets the width of the icon container */
+  height: 120px; /* Sets the height of the icon container */
+  padding: 40px 0; /* Adds 40px padding to the top and bottom of the icon container */
+  background: linear-gradient(
+    to right,
+    #6372ff 0%,
+    #5ca9fb 100%
+  ); /* Blue gradient background for the icon container */
+  border-radius: 50%; /* Makes the icon container circular */
+  color: #fff; /* Sets the icon color to white */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05); /* Adds a subtle shadow to the icon container */
+}
+#services h3 {
+  /* Styles for h3 headings within the #services section (likely service titles) */
+  font-weight: 500; /* Sets a medium font weight */
+  padding: 5px 0; /* Adds 5px padding to the top and bottom */
+  color: #fff; /* Sets the text color to white */
+}
+#services p {
+  /* Styles for paragraph text within the #services section (likely service descriptions) */
+  color: rgba(
+    255,
+    255,
+    255,
+    0.75
+  ); /* Sets a slightly transparent white color for the text */
+}
+#services .service-desc {
+  /* Styles for the service description container */
+  margin-bottom: 40px; /* Adds a 40px bottom margin for spacing between services */
+}
+/* Portfolio Section */
+#portfolio {
+  padding: 100px 0; /* Add 100px padding to the top and bottom of the portfolio section */
+}
+.portfolio-item {
+  margin: 1px -15px 0 -14px; /* Adjust margins for better spacing between portfolio items */
+  padding: 0; /* Remove any default padding */
+}
+.portfolio-item .hover-bg {
+  overflow: hidden; /* Hide any content that overflows the hover-bg container (important for the overlay) */
+  position: relative; /* Make this the reference point for absolute positioning of the overlay */
+  margin: 0; /* Remove default margins */
+}
+
+/* Hover Overlay Styles */
+.hover-bg .hover-text {
+  position: absolute; /* Position the overlay freely within the .hover-bg container */
+  text-align: center; /* Center the text within the overlay */
+  margin: 0 auto; /* Center the overlay itself horizontally */
+  color: #fff; /* White text color */
+  background: linear-gradient(
+    to right,
+    rgba(99, 114, 255, 0.8) 0%,
+    rgba(92, 169, 251, 0.8) 100%
+  ); /* Apply a gradient background with 80% opacity */
+  padding: 30% 0 0; /* Add top padding to position the text vertically */
+  height: 100%; /* Make the overlay take up the full height of its container */
+  width: 100%; /* Make the overlay take up the full width of its container */
+  opacity: 0; /* Initially hide the overlay */
+  transition: all 0.5s; /* Smooth transition for opacity change on hover */
+}
+.hover-bg .hover-text > h4 {
+  opacity: 0; /* Initially hide the title text */
+  color: #fff; /* White text color */
+  -webkit-transform: translateY(100%); /* For older WebKit browsers */
+  transform: translateY(
+    100%
+  ); /* Initially position the title off-screen (below) */
+  transition: all 0.3s; /* Smooth transition for opacity and transform changes */
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500; /* Slightly bolder font weight */
+  text-transform: uppercase; /* Make the title text uppercase */
+}
+/* Hover Effects */
+.hover-bg:hover .hover-text > h4 {
+  /* On hover, reveal the title */
+  opacity: 1; /* Make the title visible */
+  -webkit-backface-visibility: hidden; /* For older WebKit browsers */
+  -webkit-transform: translateY(0); /* For older WebKit browsers */
+  transform: translateY(0); /* Slide the title up into view */
+}
+
+.hover-bg:hover .hover-text {
+  /* On hover, reveal the overlay */
+  opacity: 1; /* Make the overlay visible */
+}
+/* Testimonials Section */
+#testimonials {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+#testimonials i {
+  color: #e6e6e6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  position: relative;
+  padding: 20px;
+}
+.testimonial-image {
+  float: left;
+  margin-right: 15px;
+}
+.testimonial-image,
+.testimonial-image img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.testimonial-content {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.testimonial-meta {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+/* Team Section */
+#team {
+  padding: 100px 0; /* 100px padding top and bottom */
+}
+#team h4 {
+  margin: 5px 0; /* 5px top and bottom margin for h4 headings (team member names) */
+}
+#team .team-img {
+  width: 240px; /* Sets a fixed width for team member images */
+}
+#team .thumbnail {
+  /* Styles for the Bootstrap thumbnail component */
+  background: transparent; /* Makes the thumbnail background transparent */
+  border: 0; /* Removes the default border */
+}
+#team .thumbnail .caption {
+  /* Styles for the caption within the thumbnail */
+  padding: 10px 0 0; /* 10px top padding, no bottom or side padding */
+  color: #888; /* Gray text color for the caption */
+}
+/* Contact Section */
+#contact {
+  padding: 100px 0 60px; /* Adds padding: 100px top, 0 left/right, 60px bottom */
+  background: linear-gradient(
+    to right,
+    #6372ff 0%,
+    #5ca9fb 100%
+  ); /* Blue gradient background */
+  color: rgba(
+    255,
+    255,
+    255,
+    0.75
+  ); /* Sets default text color to slightly transparent white */
+}
+
+#contact .section-title {
+  margin-bottom: 40px; /* Adds bottom margin to the section title container */
+}
+
+#contact .section-title p {
+  font-size: 16px; /* Sets font size for the paragraph within the section title */
+}
+
+#contact h2 {
+  color: #fff; /* White color for the main heading */
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+#contact .section-title h2::after {
+  /* Creates a decorative line under the h2 heading */
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white line */
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 30px; /* Positioned 30px from the left */
+}
+
+#contact h3 {
+  /* Styles for the "Contact Info" heading */
+  color: #fff;
+  margin-top: 80px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  font-weight: 400; /* Normal font weight */
+}
+
+#contact form {
+  padding-top: 20px; /* Adds top padding to the form */
+}
+
+#contact .text-danger {
+  /* Styles for error messages (likely using Bootstrap's .text-danger class) */
+  color: #cc0033; /* Red color */
+  text-align: left;
+}
+
+/* Custom button within the contact section */
+#contact .btn-custom {
+  margin: 30px 0; /* Top and bottom margin of 30px */
+  background: transparent; /* Transparent background */
+  border: 2px solid #fff; /* White border */
+}
+
+#contact .btn-custom:hover {
+  /* Button styles on hover */
+  color: #1f386e; /* Dark blue text color */
+  background: #fff; /* White background */
+}
+
+label {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif; /* Specific font for labels */
+  float: left; /* Floats labels to the left */
+}
+
+/* Form input fields */
+#contact .form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #444; /* Dark gray text color */
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 0; /* Removes rounded corners */
+  -webkit-box-shadow: none; /* Removes default box shadow (for older WebKit browsers) */
+  box-shadow: none;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+#contact .form-control:focus {
+  /* Styles when the input field is focused */
+  border-color: #999; /* Darker gray border */
+  outline: 0; /* Removes the default focus outline */
+  -webkit-box-shadow: transparent;
+  box-shadow: transparent;
+}
+
+/* Placeholder text styles for different browsers */
+.form-control::-webkit-input-placeholder {
+  color: #777;
+}
+.form-control:-moz-placeholder {
+  color: #777;
+}
+.form-control::-moz-placeholder {
+  color: #777;
+}
+.form-control:-ms-input-placeholder {
+  color: #777;
+}
+
+#contact .contact-item {
+  margin: 20px 0; /* Adds top and bottom margin to contact items */
+}
+
+#contact .contact-item span {
+  color: rgba(255, 255, 255, 1); /* White text color */
+  margin-bottom: 10px;
+  display: block; /* Makes the span a block-level element */
+}
+
+#contact .contact-item i.fa {
+  margin-right: 10px; /* Adds right margin to icons within contact items */
+}
+
+/* Social Media Links Section */
+#contact .social {
+  border-top: 1px solid rgba(255, 255, 255, 0.15); /* Adds a semi-transparent white border at the top */
+  padding-top: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#contact .social ul li {
+  display: inline-block; /* Displays list items horizontally */
+  margin: 0 20px; /* Adds 20px margin on left and right of each item */
+}
+
+#contact .social i.fa {
+  /* Styles for social media icons */
+  font-size: 22px;
+  width: 48px;
+  height: 48px;
+  padding: 12px 0;
+  border: 2px solid #fff; /* White border */
+  color: #fff;
+  border-radius: 50%; /* Makes the icons circular */
+  transition: all 0.3s; /* Smooth transition for hover effect */
+}
+
+#contact .social i.fa:hover {
+  /* Icon styles on hover */
+  color: #608dfd; /* Changes icon color to blue */
+  background: #fff; /* Changes background to white */
+}
+
+/* Footer Section*/
+
+#footer {
+  /* Styles the main footer container */
+  background: #f6f6f6; /* Light gray background color */
+  padding: 30px 0; /* 30px padding top and bottom, no left/right padding */
+}
+
+#footer p {
+  /* Styles paragraph text within the footer */
+  color: #888; /* Gray text color */
+  font-size: 14px; /* Smaller font size for the footer text */
+}
+
+#footer a {
+  /* Styles links within the footer */
+  color: #608dfd; /* Blue link color */
+}
+
+#footer a:hover {
+  /* Styles links when hovered over */
+  border-bottom: 2px solid #608dfd; /* Adds a 2px solid blue underline on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  /* Applies styles when screen width is 768px or less (tablets and smaller) */
+  #about img {
+    /* Targets the image within the #about section */
+    margin: 50px 0; /* Adds 50px top and bottom margin to the image on smaller screens */
+  }
+}
