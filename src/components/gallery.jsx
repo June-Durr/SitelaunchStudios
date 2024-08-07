@@ -12,8 +12,8 @@ export const Gallery = (props) => {
           {/* Section title and description */}
           <h2>Gallery</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Explore a selection of our recent projects, demonstrating our
+            expertise in crafting beautiful and functional websites.
           </p>
         </div>
         <div className="row">

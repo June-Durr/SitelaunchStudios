@@ -8,8 +8,8 @@ export const Team = (props) => {
           {/* Section title container, centered using offset on medium and larger screens */}
           <h2>Meet the Team</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec. {/* Placeholder text */}
+            Our team of experienced developers and designers is ready to build
+            your next exceptional web experience. {/* Placeholder text */}
           </p>
         </div>
         <div id="row">

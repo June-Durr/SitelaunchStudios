@@ -1,12 +1,22 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Site Launch Studios crafts custom React websites designed to elevate your business and drive growth."
+    "title": "SiteLaunch Studios",
+    "paragraph": "We craft custom React websites designed to elevate your business and drive growth."
   },
   "About": {
-    "paragraph": "ABOUT ABOUT AABOUTLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Why": ["Why .1", "Why .2", "Why .3", "Why .4"],
-    "Why2": ["Why 2.1", "Why 2.2", "Why 2.3", "Why 2.4"]
+    "paragraph": "At Site Launch Studios, we're passionate about crafting exceptional web experiences. Our team of skilled developers leverages the power and flexibility of React, JavaScript, Bootstrap, and Tailwind CSS to build dynamic, user-friendly websites that deliver results. We're committed to clean code, beautiful design, and helping your business thrive online.",
+    "Why": [
+      "Expertise in React, JavaScript, and modern web technologies",
+      "Focus on clean, maintainable, and scalable code",
+      "Passion for creating beautiful and user-centric designs",
+      "Commitment to delivering projects on time and within budget"
+    ],
+    "Why2": [
+      "Proven track record of successful projects",
+      "Collaborative approach to understanding your unique needs",
+      "Dedication to providing ongoing support and maintenance",
+      "Results-driven focus on helping your business grow"
+    ]
   },
   "Gallery": [
     {
@@ -57,34 +67,34 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-code",
+      "name": "Custom React Development",
+      "text": "We leverage React's power to build dynamic, interactive, and user-friendly websites that engage your audience and drive results."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-paint-brush",
+      "name": "Responsive Design",
+      "text": "We create visually appealing and responsive websites that look and function flawlessly across all devices, from desktops to mobile phones."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-search",
+      "name": "SEO Optimization",
+      "text": "We implement SEO best practices to ensure your website ranks high in search results, attracting more organic traffic and potential customers."
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-rocket",
+      "name": "Performance Optimization",
+      "text": "We fine-tune your website for speed and efficiency, delivering a fast and seamless user experience that keeps visitors engaged."
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-wrench",
+      "name": "Ongoing Support & Maintenance",
+      "text": "We provide continuous support and maintenance to ensure your website stays up-to-date, secure, and performs optimally."
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-comments",
+      "name": "Collaborative Approach",
+      "text": "We work closely with you throughout the development process, ensuring your vision is translated into a website that exceeds expectations."
     }
   ],
   "Testimonials": [
@@ -122,23 +132,8 @@
   "Team": [
     {
       "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "name": "Alberto C.",
+      "job": "Web Developer"
     }
   ],
   "Contact": {
@@ -151,24 +146,24 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-code",
+      "title": "Custom React Development",
+      "text": "We build tailored React applications that are dynamic, interactive, and optimized for user experience."
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-mobile",
+      "title": "Responsive Design",
+      "text": "Our websites look and function flawlessly across all devices, ensuring a seamless experience for every visitor."
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-search",
+      "title": "SEO Optimization",
+      "text": "We implement SEO best practices to boost your website's visibility and attract organic traffic."
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-tachometer",
+      "title": "Performance-Driven",
+      "text": "We prioritize speed and efficiency, delivering lightning-fast websites that keep your users engaged."
     }
   ]
 }
