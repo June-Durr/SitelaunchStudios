@@ -14,7 +14,10 @@ export const Features = (props) => {
           {props.data
             ? props.data.map((d, i) => (
                 // Dynamically render feature items
-                <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
+                <div
+                  key={`${d.title}-${i}`}
+                  className="col-xs-12 col-sm-6 col-md-3"
+                >
                   {/* Each feature takes 6 columns on extra-small screens, 3 columns on medium and up */}{" "}
                   <i className={d.icon}></i> {/* Icon for the feature */}
                   <h3>{d.title}</h3> {/* Feature title */}

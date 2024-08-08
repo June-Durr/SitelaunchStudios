@@ -246,7 +246,8 @@ a:focus,
 }
 /* Header Section */
 .intro {
-  display: table; /* Makes the intro section behave like a table for vertical centering */
+  display: table;
+  /* Makes the intro section behave like a table for vertical centering */
   width: 100%;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat; /* Sets the background image */
@@ -380,7 +381,7 @@ header .intro-text {
   color: #fff; /* Sets the default text color to white */
 }
 #services .service-desc {
-  margin: 10px 10px 20px; /* Adds margins around the service description container: 
+  margin: 0; /* Adds margins around the service description container: 
   * 10px top and bottom
   * 10px left and right
   * Overrides the 40px bottom margin added later 
@@ -755,5 +756,18 @@ label {
   #about img {
     /* Targets the image within the #about section */
     margin: 50px 0; /* Adds 50px top and bottom margin to the image on smaller screens */
+  }
+  @media (max-width: 768px) {
+    /* Adjust for tablets and smaller */
+    .intro h1 {
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width: 760px) {
+    /* Adjust for mobile phones */
+    .intro h1 {
+      font-size: 36px;
+    }
   }
 }
