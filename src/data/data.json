@@ -1,0 +1,137 @@
+{
+  "Header": {
+    "title": "SiteLaunch Studios | Miami React Development",
+    "paragraph": "We craft custom React websites designed to elevate your Miami business, enhance user experience, and drive measurable growth through modern web technology."
+  },
+  "About": {
+    "paragraph": "At SiteLaunch Studios, we're Miami's passionate React development team focused on crafting exceptional web experiences. Our skilled developers leverage the power and flexibility of React, JavaScript, Bootstrap, and Tailwind CSS to build dynamic, user-friendly websites that deliver results. Based in Miami, FL, we're committed to clean code, beautiful design, and helping local and national businesses thrive online through strategic web development.",
+    "Why": [
+      "Expertise in React, JavaScript, and modern web technologies",
+      "Miami-based team with focus on responsive, mobile-first design",
+      "SEO-optimized website development for better search visibility",
+      "Commitment to delivering projects on time and within budget"
+    ],
+    "Why2": [
+      "Proven track record of successful web development projects",
+      "Collaborative approach to understanding your unique business needs",
+      "Dedicated ongoing support and maintenance packages",
+      "Results-driven focus on helping your Miami business grow online"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Miami Restaurant Website Redesign",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "E-commerce React Application",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Real Estate Property Showcase",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Miami Legal Firm Website",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Healthcare Provider Portal",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Miami Tourism Interactive Map",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Fitness Studio Booking System",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Miami Startup Landing Page",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Financial Services Dashboard",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-code",
+      "name": "Custom React Development",
+      "text": "We leverage React's power to build dynamic, interactive, and user-friendly websites that engage your audience and drive measurable business results in the Miami market and beyond."
+    },
+    {
+      "icon": "fa fa-paint-brush",
+      "name": "Responsive Web Design",
+      "text": "We create visually appealing and mobile-optimized websites that look and function flawlessly across all devices, essential for Miami's mobile-first consumers."
+    },
+    {
+      "icon": "fa fa-search",
+      "name": "Local SEO Optimization",
+      "text": "We implement Miami-focused SEO strategies and technical best practices to ensure your website ranks high in local search results, attracting more organic traffic from your target market."
+    },
+    {
+      "icon": "fa fa-rocket",
+      "name": "Performance Optimization",
+      "text": "We fine-tune your React website for speed and efficiency, delivering a fast and seamless user experience that keeps Miami visitors engaged and reduces bounce rates."
+    },
+    {
+      "icon": "fa fa-wrench",
+      "name": "Ongoing Support & Maintenance",
+      "text": "Our Miami-based team provides continuous support and maintenance to ensure your website stays up-to-date, secure, and performs optimally in today's competitive digital landscape."
+    },
+    {
+      "icon": "fa fa-comments",
+      "name": "Collaborative Approach",
+      "text": "We work closely with Miami businesses throughout the development process, ensuring your vision is translated into a website that exceeds expectations and achieves your business goals."
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "Alberto C.",
+      "job": "React Developer & Founder"
+    }
+  ],
+  "Contact": {
+    "address": "3301 NE 5th Ave, Miami, FL 33137",
+    "phone": "+1 203 536 0834",
+    "email": "sitelaunchstudio@gmail.com",
+    "facebook": "https://www.facebook.com/",
+    "twitter": "https://twitter.com/",
+    "youtube": "https://youtube.com/"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-code",
+      "title": "Miami React Development",
+      "text": "We build tailored React applications that are dynamic, interactive, and optimized for exceptional user experience and business growth."
+    },
+    {
+      "icon": "fa fa-mobile",
+      "title": "Mobile-First Design",
+      "text": "Our websites are optimized for Miami's mobile-heavy market, ensuring flawless functionality across all devices and screen sizes."
+    },
+    {
+      "icon": "fa fa-search",
+      "title": "Local SEO Optimization",
+      "text": "We implement Miami-focused SEO strategies to boost your website's visibility in local search results and attract nearby customers."
+    },
+    {
+      "icon": "fa fa-tachometer",
+      "title": "Performance-Optimized",
+      "text": "We prioritize speed and efficiency, delivering lightning-fast React websites that keep your Miami customers engaged and satisfied."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+/* Mobile Responsiveness */
+@media screen and (max-width: 767px) {
+  #features,
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact,
+  #footer,
+  #portfolio {
+    width: 100%;
+    padding: 40px 15px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Improve header display on small screens */
+  #header .intro-text h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  #header .intro-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust service items for better mobile display */
+  #services .service-desc {
+    margin-bottom: 30px;
+  }
+
+  /* Adjust team members display */
+  .team {
+    margin-bottom: 30px;
+  }
+
+  /* Improve contact form spacing */
+  .form-group {
+    margin-bottom: 15px;
+  }
+}
+
+/* Tablet Adjustments */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .col-sm-6 {
+    margin-bottom: 25px;
+  }
+}
